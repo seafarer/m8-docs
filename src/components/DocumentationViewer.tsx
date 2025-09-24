@@ -61,7 +61,7 @@ export function DocumentationViewer({ section }: DocumentationViewerProps) {
               </li>
             ),
             strong: ({ children }) => (
-              <strong className="font-semibold text-sky-700 bg-muted px-1 py-0.5 rounded text-sm">
+              <strong className="font-semibold text-callout bg-callout-background px-1 py-0.5 rounded text-sm">
                 {children}
               </strong>
             ),

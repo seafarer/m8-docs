@@ -11,8 +11,8 @@ export function App() {
   const currentSection = docSections.find(section => section.id === activeSection) || docSections[0];
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border z-40">
+    <div className="min-h-screen bg-muted dark:bg-foreground grid place-items-center min-w-[320px] min-h-screen relative">
+      <header className="sticky top-0 left-0 right-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border z-40">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center">
