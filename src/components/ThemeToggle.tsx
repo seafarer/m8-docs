@@ -2,16 +2,18 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
 export function ThemeToggle() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    // Initialize with current state to prevent hydration mismatch
+    if (typeof window !== 'undefined') {
+      return document.documentElement.classList.contains('dark');
+    }
+    return false;
+  });
 
   useEffect(() => {
-    // Check for saved theme preference or default to system preference
-    const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const shouldBeDark = saved === 'dark' || (!saved && prefersDark);
-    
-    setIsDark(shouldBeDark);
-    document.documentElement.classList.toggle('dark', shouldBeDark);
+    // Sync with the current DOM state (set by the blocking script)
+    const currentIsDark = document.documentElement.classList.contains('dark');
+    setIsDark(currentIsDark);
   }, []);
 
   const toggleTheme = () => {
