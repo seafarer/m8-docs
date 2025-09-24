@@ -59,7 +59,7 @@
   --accent-foreground: hsl(0 0% 98%);
   --destructive: hsl(0 62.8% 30.6%);
   --destructive-foreground: hsl(0 0% 98%);
-  --border:oklch(37.1% 0 0);
+  --border: hsl(240 3.7% 15.9%);
   --input: hsl(240 3.7% 15.9%);
   --ring: hsl(240 4.9% 83.9%);
   --chart-1: hsl(220 70% 50%);
@@ -75,8 +75,8 @@
   --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
   --sidebar-border: hsl(240 3.7% 15.9%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
-  --callout: oklch(74.6% 0.16 232.661);
-  --callout-background: oklch(37.1% 0 0);
+  --callout: hsl(232 74% 60%);
+  --callout-background: hsl(240 10% 3.9%);
 }
 
 @theme inline {
