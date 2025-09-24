@@ -76,7 +76,7 @@ export const docSections: DocSection[] = [
     id: 'eq-editor-view',
     title: 'EQ Editor View',
     shortTitle: 'EQ Editor',
-    filename: '10_EQ-Editor-View.md',
+    filename: '11_EQ-Editor-View.md',
     image: '11_eq-view.png',
   },
   {
@@ -90,21 +90,21 @@ export const docSections: DocSection[] = [
     id: 'limiter-mix-scope-view',
     title: 'Limiter Mix Scope View',
     shortTitle: 'Limiter',
-    filename: '11_Limiter-Mix-Scope-View.md',
+    filename: '12_Limiter-Mix-Scope-View.md',
     image: '12_scope-view.png',
   },
   {
     id: 'effect-settings-view',
     title: 'Effect Settings View',
     shortTitle: 'Effects',
-    filename: '12_Effect-Settings-View.md',
+    filename: '13_Effect-Settings-View.md',
     image: '13_efx-view.png',
   },
   {
     id: 'project-view',
     title: 'Project View',
     shortTitle: 'Project',
-    filename: '13_Project-View.md',
+    filename: '14_Project-View.md',
     image: '14_project-view.png',
   },
 ];
